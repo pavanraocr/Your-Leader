@@ -1,1 +1,2 @@
-Reinitialized existing Git repository in /media/pavan/Data/IIT/4th Sem/MAD/assignments/A5/git/#Your Leader\nAn android application that gives you information on the current people who have taken offices at different levels/.git/
+#Your Leader
+An android application that gives you information on the current people who have taken offices at different levels
