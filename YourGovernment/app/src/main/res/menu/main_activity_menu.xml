@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_about"
+        android:icon="@drawable/help"
+        app:showAsAction="always"
+        android:visible="true"
+        android:enabled="true"
+        android:title="@string/menu_lbl_info" />
+    <item android:id="@+id/menu_location_search"
+        android:title="@string/menu_lbl_location_search"
+        android:icon="@drawable/location"
+        app:showAsAction="always"
+        android:visible="true"
+        android:enabled="true" />
+</menu>

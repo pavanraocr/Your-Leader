@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:id="@+id/ll_pd_complete">
+
+    <TextView
+        android:text="@string/tv_location_hint"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_pd_location"
+        android:contentDescription="@string/tv_location_hint"
+        android:gravity="center_vertical|center_horizontal"
+        style="@style/locationTextView"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:weightSum="1"
+        android:id="@+id/ll_pd_official_detail"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pd_location"
+        tools:layout_constraintTop_creator="1">
+
+        <android.support.constraint.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/photo_vertical_guide"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.6"
+            tools:layout_editor_absoluteX="355dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:text="@string/tv_office_name_hint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_pd_office"
+            android:contentDescription="@string/tv_office_name_hint"
+            android:gravity="center_horizontal"
+            android:textAppearance="@android:style/TextAppearance.Material.Small"
+            android:includeFontPadding="false"
+            android:padding="2dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/photo_vertical_guide"
+            android:layout_marginTop="80dp"
+            app:layout_constraintHorizontal_bias="0.0" />
+
+        <TextView
+            android:text="@string/tv_official_name_hint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_pd_official_name"
+            android:contentDescription="@string/tv_official_name_hint"
+            android:gravity="center_horizontal"
+            android:textAppearance="@android:style/TextAppearance.Material.Title"
+            android:padding="5dp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_pd_office"
+            app:layout_constraintRight_toRightOf="@+id/tv_pd_office"
+            app:layout_constraintLeft_toLeftOf="@+id/tv_pd_office"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.26" />
+
+        <ImageView
+            android:layout_width="0dp"
+            app:srcCompat="@drawable/missingimage"
+            android:id="@+id/iv_pd_official"
+            android:scaleType="fitCenter"
+            android:contentDescription="@string/iv_official_image_hint"
+            android:layout_height="0dp"
+            android:cropToPadding="false"
+            android:padding="5dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="@+id/photo_vertical_guide"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>
