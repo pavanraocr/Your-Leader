@@ -38,7 +38,7 @@
     <string name="republican">Republican</string>
     <string name="democratic">Democratic</string>
     <string name="democrate">Democrat</string>
-    <string name="apiKey">AIzaSyDy_ZoehQTTfIPbxAu1ZSbeED0ltObDKEM</string>
+    <string name="apiKey">*****</string>
     <string name="NO_LOC_PROV">No location providers were available</string>
     <string name="SEARCH_MANUAL_MSG">search for any location manually</string>
 </resources>
