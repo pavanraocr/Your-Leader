@@ -20,7 +20,8 @@
         <activity android:name=".OfficialsDetail"
             android:theme="@style/officialDetails"
             android:parentActivityName=".MainActivity"/>
-        <activity android:name=".Information"/>
+        <activity android:name=".Information"
+            android:parentActivityName=".MainActivity"/>
         <activity android:name=".PhotoDetail"
             android:theme="@style/officialDetails"
             android:parentActivityName=".MainActivity"/>

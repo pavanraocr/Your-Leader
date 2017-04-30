@@ -125,7 +125,8 @@ public class OfficialsDetail extends AppCompatActivity {
         if(!officialsDetails.getName().isEmpty())
             tv_official_name.setText(officialsDetails.getName());
 
-        if(!officialsDetails.getParty().isEmpty())
+        if(!officialsDetails.getParty().isEmpty() ||
+                !officialsDetails.getParty().equals(getString(R.string.party_unknown)))
             tv_party_name.setText(officialsDetails.getParty());
         else
             tv_party_name.setVisibility(View.GONE);

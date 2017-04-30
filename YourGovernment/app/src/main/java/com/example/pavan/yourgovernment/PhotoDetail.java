@@ -68,7 +68,8 @@ public class PhotoDetail extends AppCompatActivity {
     private void setViewProperty() {
         if(officialsDetails.getParty().equals(getString(R.string.republican)))
                 completeView.setBackgroundColor(Color.RED);
-        else if(officialsDetails.getParty().equals(getString(R.string.democrate)))
+        else if(officialsDetails.getParty().equals(getString(R.string.democratic)) ||
+                officialsDetails.getParty().equals(getString(R.string.democrate)))
             completeView.setBackgroundColor(Color.BLUE);
         else
             completeView.setBackgroundColor(Color.BLACK);
